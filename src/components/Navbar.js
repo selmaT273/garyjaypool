@@ -1,15 +1,54 @@
 import React, { useState } from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Dropdown from './Dropdown';
+import AboutDropdown from './AboutDropdown';
 
 function Navbar() {
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false);
+    const [aboutDropdown, setAboutDropdown] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
+
+    const onMouseEnterAbout = () => {
+        if(window.innerWidth < 900) {
+            setAboutDropdown(false);
+        }
+        else {
+            setAboutDropdown(true);
+        }
+    };
+
+    const onMouseLeaveAbout = () => {
+        if (window.innerWidth < 900){
+         //   setDropdown(false);
+            setAboutDropdown(false);
+        }
+        else {
+          //  setDropdown(false);
+            setAboutDropdown(false);
+        }
+    };
+    const onMouseEnter = () => {
+        if(window.innerWidth < 900) {
+            setDropdown(false);
+        }
+        else {
+            setDropdown(true);
+        }
+    };
+
+    const onMouseLeave = () => {
+        if (window.innerWidth < 900){
+            setDropdown(false);
+        }
+        else {
+            setDropdown(false);
+        }
+    };
+
     return (
         <>
             <nav className='navbar'>
@@ -28,21 +67,17 @@ function Navbar() {
                             Home
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li className='nav-item' 
+                        onMouseEnter={onMouseEnterAbout}
+                        onMouseLeave={onMouseLeaveAbout}
+                    >
                         <Link 
-                            to= '/bio' 
+                            // to= '/links' 
                             className='nav-links' 
                             onClick={closeMobileMenu}>
-                            Bio
+                            About <i className='fas fa-caret-down' />
                         </Link>
-                    </li> 
-                    <li className='nav-item'>
-                        <Link 
-                            to= '/works' 
-                            className='nav-links' 
-                            onClick={closeMobileMenu}>
-                            Works
-                        </Link>
+                        {aboutDropdown && <AboutDropdown />}
                     </li>
                     <li className='nav-item'>
                         <Link 
@@ -52,9 +87,12 @@ function Navbar() {
                             Shop
                         </Link>
                     </li>
-                    <li className='nav-item'>
+                    <li className='nav-item' 
+                        onMouseEnter={onMouseEnter}
+                        onMouseLeave={onMouseLeave}
+                    >
                         <Link 
-                            to= '/links' 
+                            // to= '/links' 
                             className='nav-links' 
                             onClick={closeMobileMenu}>
                             Links<i className='fas fa-caret-down' />
