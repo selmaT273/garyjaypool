@@ -1,18 +1,18 @@
 .dropdown-menu {
     width: 150px;
     position: absolute;
-    top: 15vh;
+    top: 12vh;
     list-style: none;
     text-align: start;
 }
 
 .dropdown-menu li {
-    background: #847577;
+    background: #A6A2A2;
     cursor: pointer;
 }
 
 .dropdown-menu li:hover {
-    background: #A6A2A2;
+    background: #564D4F;
 }
 
 .dropdown-menu.clicked {

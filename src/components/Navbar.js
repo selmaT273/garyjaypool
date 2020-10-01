@@ -95,7 +95,7 @@ function Navbar() {
                             // to= '/links' 
                             className='nav-links' 
                             onClick={closeMobileMenu}>
-                            Links<i className='fas fa-caret-down' />
+                            Links <i className='fas fa-caret-down' />
                         </Link>
                         {dropdown && <Dropdown />}
                     </li>
