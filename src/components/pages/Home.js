@@ -8,7 +8,7 @@ export default function Home() {
                     <div className="home-pic-container">
                         <img className="home-pic" alt="explosives" src={require('../../home-image.jpg')} />
                         <div className="home-pic-text">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim nec dui nunc mattis enim ut tellus elementum sagittis. Mollis nunc sed id semper risus in hendrerit gravida rutrum.</p>
+                            <p>"I was out with a patrol in Viet Nam's rice paddy covered delta when it occurred to me...my father had spent his life trying to raise me to survive being a soldier in a war that he somehow knew was coming."</p>
                         </div>
                     </div>
                 </div>
