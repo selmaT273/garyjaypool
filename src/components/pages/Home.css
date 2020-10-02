@@ -31,29 +31,31 @@
     font-size: .6rem;
     color: #CFC9CA;
     padding-top: 5%;
-    padding-left: 56%;
+    padding-left: 50%;
 
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .home-pic-container {
         flex-wrap: wrap;
     }
 
     .home-pic {
         margin-left: 25%;
-        padding-top: 20%;
+        padding-top: 15%;
         width: 50%;
+        height: 40%;
     }
 
     .home-pic-text {
-        width: 500px;
+        width: 600px;
         padding-top: 20px;
-        padding-bottom: 10px;
+        padding-bottom: 20px;
         text-align: center;
     }
 
     .home-author {
         padding-left: 30%;
+        padding-top: 2%;
     }
 }
