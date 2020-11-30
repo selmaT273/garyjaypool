@@ -1,10 +1,10 @@
 .navbar {
     background: linear-gradient(90deg, rgb(132, 117, 119) 0%, rgb(108, 96, 98) 100%);
-    height: 70px;
+    height: 98px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     font-family: 'Josefin Slab', serif;
     position: sticky;
     top: 0;
@@ -17,7 +17,7 @@
     padding-right: 3rem;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-family: 'Alegreya SC', serif;
     display: flex;
     flex-wrap: wrap;
@@ -25,12 +25,12 @@
 }
 
 .navbar-logo span {
-    font-size: .8rem;
-    padding-left: 13%;
+    font-size: 1rem;
+    padding-left: 10%;
 }
 
 .navbar-logo div {
-    padding-left: 13.5%;
+    padding-left: 13.7%;
 }
 
 .nav-menu {
@@ -39,7 +39,7 @@
     grid-gap: 10px;
     list-style: none;
     text-align: center;
-    width: 60vw;
+    width: 100vw;
     justify-content: end;
     margin-right: 0rem;
 }
@@ -75,7 +75,7 @@
     display: none;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1018px) {
     .NavbarItems {
         position: relative;
     }
