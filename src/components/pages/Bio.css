@@ -1,14 +1,22 @@
 .bio-banner-container {
+    display: flex;
     height: 20rem;
     width: 70%;
     margin: 0 auto;
     background-image: linear-gradient(to right, white, #E5E6E4, white);
+    align-items: center;
+    justify-content: space-between;
 }
 
 .bio-banner-title {
     font-family: 'Alegreya SC', serif;
-    font-size: 3rem;
+    font-size: 4rem;
     color:  white;
     text-shadow: #847577 1px 0 10px;
-    padding-top: 12%;
+}
+
+.bio-pic {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: 100%;
 }

@@ -6,7 +6,7 @@ export default function Bio() {
         <>
             <div className="bio-banner-container">
                 <h1 className="bio-banner-title">Gary Jay Pool</h1>
-                {/* <img className="home-pic" alt="explosives" src={require('../../standinbiopic.jpg')} />  */}
+                <img className="bio-pic" alt="explosives" src={require('../../standinbiopic.jpg')} /> 
             </div>
         </>
     )
